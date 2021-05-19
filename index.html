@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The first lab on the WEB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div id="Choice">
+		<p>Выберите вид информации, которую хотите узнать</p>
+		<input type="radio" name="radiobutton" value="math" id="math"> <label>Математика</label><br>
+		<input type="radio" name="radiobutton" value="trivia" id="trivia"> <label>Мелочи</label><br>
+		<input type="radio" name="radiobutton" value="date" id="date">  <label>Дата</label><br>
+		<input type="radio" name="radiobutton" value="year" id="year"> <label>Год</label><br>
+	</div>
+	<div id="dataselection" >
+		<p>Выберите способ ввода данных</p>
+		<input type="radio" name="d" id="input"><label>Ввод данных</label><br>
+		<input type="radio" name="d" id="random"><label>Рандомные данные</label><br>
+	</div>
+	<div id="choicedate">
+		<p>На сайте есть возможность получения информации для даты, по месяцу и дню либо по коду<br>
+		<b>Только для не рандомных данных!</b></p>
+		<input type="radio" name="q" id="date1"><label>Ввод датой</label><br>
+		<input type="radio" name="q" id="date2"><label>Ввод кодом</label><br>
+	</div>
+	<div id="Input">
+		<p>Введите необходимые данные<br>
+		<b>Для рандомных данных ничего вводить не надо!</b><br>
+		Для категорий - математика, мелочи, год и дата по коду,<b><i> информация вводится в перве поле ввода</i></b><br>
+		Для категории - дата с вводом месяца и дня,<b><i> месяц вводится в первое поле ввода, день во второе</i></b></p>
+			
+			<label>Первое поле ввода:</label><input type="text" id="input_month"><br>
+			<label>Второе поле ввода:</label><input type="text" id="input_day"><br>
+			
+		<button onclick="SendingData();">Go</button>
+	</div>
+	<div id="res">
+		<label><b>Результат:</b></label>
+		<label id="result"></label>
+	</div>
+	<script src="functions.js" ></script>
+</body>
+</html>
